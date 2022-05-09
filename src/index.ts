@@ -37,3 +37,15 @@ if (total >= 1000) {
 } else {
   console.log("El precio a pagar es: " + total);
 }
+
+// Ejercicio Par/Impar
+
+let numero: number | null = Number(prompt("Ingrese un número"));
+
+if (numero === 0) {
+  alert("El número ingresado es 0");
+} else if (numero % 2 === 0) {
+  alert("El número ingresado es par");
+} else {
+  alert("El número ingresado es impar");
+}
