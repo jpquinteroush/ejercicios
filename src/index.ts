@@ -70,3 +70,24 @@ if (mes === "octubre") {
 } else {
   alert("El total a pagar es: " + precioUnitario);
 }
+
+// Ejercicio Eureka
+
+let contraseña: string = "eureka";
+let contador: number = 0;
+
+while (contador < 3) {
+  let claveIntento: string | null = prompt("Ingrese la clave");
+  if (contraseña === claveIntento) {
+    console.log("Clave válida");
+    contador = 3;
+  } else {
+    if (contador < 3) {
+      alert("Contraseña incorrecta, intente de nuevo");
+      contador++;
+    }
+  }
+}
+if (claveIntento !== contraseña) {
+  alert("Ha superado el maximo de intentos");
+}
