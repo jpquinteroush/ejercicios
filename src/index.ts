@@ -58,9 +58,10 @@ let precioUnitario: number | null = Number(
 let cantidad: number | null = Number(
   prompt("Ingrese cantidad de los productos")
 );
+let total: number = precioUnitario * cantidad;
 let mes: String | null = String(prompt("Ingrese mes de su cumpleaños"));
 let descuento: number = precioUnitario * 0.15;
-let precioConDescuento: number = precioUnitario - descuento;
+let precioConDescuento: number = total - descuento;
 
 if (mes === "octubre") {
   alert(
@@ -68,7 +69,7 @@ if (mes === "octubre") {
       precioConDescuento
   );
 } else {
-  alert("El total a pagar es: " + precioUnitario);
+  alert("El total a pagar es: " + total);
 }
 
 // Ejercicio Eureka
