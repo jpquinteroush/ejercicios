@@ -104,3 +104,12 @@ for (num1; num1 < num2; num1++) {
 }
 
 console.log("La suma total es: " + suma);
+
+// Ejercicio Tablas de multiplicación
+
+let numero: number = Number(prompt("Ingrese un número"));
+let hasta: number = Number(prompt("Ingrese otro número"));
+
+for (let i: number = 1; i <= hasta; i++) {
+  console.log(numero, "x" + i, "=", +numero * i);
+}
