@@ -19,3 +19,21 @@ let promedioVuetlas: number = tiempoTotal / 4;
 console.log("El tiempo total fue: " + tiempoTotal, "minutos.");
 console.log("El promedio entre vueltas fue: " + promedioVuetlas, "minutos.");
 
+// Ejercicio Aplicar descuento
+
+let monto: number = 3000;
+let cantidad: number = 3;
+let descuento: number = 0.1;
+
+let total: number = monto * cantidad;
+let descuentoDeCompra: number = monto * descuento;
+let totalConDescuento: number = total - descuentoDeCompra;
+
+if (total >= 1000) {
+  console.log(
+    "Usted recibió un descuento del 10%, el monto a pagar es: " +
+      totalConDescuento
+  );
+} else {
+  console.log("El precio a pagar es: " + total);
+}
