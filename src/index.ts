@@ -49,3 +49,24 @@ if (numero === 0) {
 } else {
   alert("El número ingresado es impar");
 }
+
+// Ejercicio Descuento Octubre
+
+let precioUnitario: number | null = Number(
+  prompt("Ingrese precio del producto")
+);
+let cantidad: number | null = Number(
+  prompt("Ingrese cantidad de los productos")
+);
+let mes: String | null = String(prompt("Ingrese mes de su cumpleaños"));
+let descuento: number = precioUnitario * 0.15;
+let precioConDescuento: number = precioUnitario - descuento;
+
+if (mes === "octubre") {
+  alert(
+    "Su compra tiene un 15% de descuento, el total a pagar es: " +
+      precioConDescuento
+  );
+} else {
+  alert("El total a pagar es: " + precioUnitario);
+}
