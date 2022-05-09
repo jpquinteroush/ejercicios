@@ -91,3 +91,16 @@ while (contador < 3) {
 if (claveIntento !== contraseña) {
   alert("Ha superado el maximo de intentos");
 }
+
+// Ejercicio Suma entre números
+
+let num1: number = Number(prompt("Ingrese un número"));
+let num2: number = Number(prompt("Ingrese otro número más"));
+
+let suma: number = num1;
+
+for (num1; num1 < num2; num1++) {
+  suma = suma + num1 + 1;
+}
+
+console.log("La suma total es: " + suma);
